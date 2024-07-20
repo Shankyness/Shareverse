@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.wrapper {
+  width: 600px;
+  height: auto;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(90deg, rgba(255,0,150,1) 0%, rgba(0,204,255,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-color: rgba(0, 0, 0, 0.5); /* Greyish background */
+  padding: 90px;
+  border-radius: 50px;
+}
+
+p {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+button {
+  width: 150px;
+  height: 40px;
+  border-radius: 5px;
+  background: linear-gradient(90deg, rgba(255,0,150,1) 0%, rgba(0,204,255,1) 100%);
+  border: 2px solid #000; /* Black border */
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(90deg, rgba(0,204,255,1) 0%, rgba(255,0,150,1) 100%);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+button:focus {
+  outline: none;
+}
+
+.link-row {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.link-row input {
+  width: 18vw;
+  padding: 5px;
+  border: 2px solid #5fdaff;
+  border-radius: 5px;
+  margin-right: 10px;
+  color: #d4f5ff;
+  background: none;
+}
+
+.link-row button {
+  width: auto;
+  padding: 5px 10px;
+  margin-right: 10px; /* Margin between buttons */
+  border-radius: 5px;
+  background: #c0dbe3;
+  border: 2px solid #000; /* Black border */
+  color: #000;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.link-row button:last-child {
+  margin-right: 0; /* Remove margin for the last button */
+}
+
+.link-row button:hover {
+  transform: scale(1.05);
+  background: #47b9e0;
+}
+
+.link-row button:active {
+  transform: scale(0.95);
+}
+
+.link-row button:focus {
+  outline: none;
+}
